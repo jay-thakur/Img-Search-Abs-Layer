@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Image Search Abstraction Layer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    </head>
+  <body>
+    <div class = 'container'>
+        <div class="page-header text-center">
+            <h1>Image Search Abstraction Layer</h1>
+        </div>
+        <div>
+            <h3>Overview:</h3>
+            <p> This is a FreeCodeCamp API Project where a user can pass a String as a parameter and will  get the image URLs, alt text and page urls for a set of images relating to a given search string in the JSON response</p>
+            <h4>User Stories:</h4>
+                <li>Can get the image URLs, alt text and page urls for a set of images relating to a given search string</li>
+                <li>Can paginate through the responses by adding a ?offset=2 parameter to the URL.</li>
+                <li>Can get a list of the most recently submitted search strings.</li>
+            <h3>Example Usage:</h3>
+            <code>https://ms-img-search-abs-layer.herokuapp.com/</code> <br>
+            <code>https://ms-img-search-abs-layer.herokuapp.com/api/imgSearch/cricket</code> <br>
+            <code>https://ms-img-search-abs-layer.herokuapp.com/api/imgSearch/cricket?offset=2</code> <br>
+            <code>https://ms-img-search-abs-layer.herokuapp.com/api/recent/imgSearch</code> <br>
+            <h3>Example Output:</h3>
+            <code>[{"type":"image/jpeg","width":2048,"height":1180,"size":594269,"url":"https://i.ytimg.com/vi/VRmz8PiyvvI/maxresdefault.jpg","thumbnail":{"url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqRFx5po8-1jQzHeXSC6VyDdJ_94ZXNA_vc3iTRyUdfDfsSvmMOY7GMdU","width":150,"height":86},"description":"Best Fielding in Cricket ...","parentPage":"https://www.youtube.com/watch?v=VRmz8PiyvvI"},{"type":"image/jpeg","width":5616,"height":3744,"size":2010107,"url":"http://www.ricsmenaevents.org/wp-content/uploads/2016/06/Cricket.jpg","thumbnail":{"url":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdX71nYQmcUQeaBh_IHkY6hd0qUD4doqg7O3sePAiD5VavosOG9VZUXZxn","width":150,"height":100},"description":"RICS MATRICS Group Cricket ...","parentPage":"https://www.linkedin.com/pulse/rics-matrics-cricket-tournament-2016-zeeshan-javaid"},{"type":"image/jpeg","width":1260,"height":840,"size":146045,"url":"http://stluciasportsonline.com/wp-content/uploads/cricket-ball-bat.jpg","thumbnail":{"url":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSp2Rv-w_EW_WY9fYtKG-3dD6ccqqxxxJG9Kh-CWKCo2Yc_iKY8j9IcPY9B","width":150,"height":100},"description":"Castries Cricket News – Saint ...","parentPage":"http://stluciasportsonline.com/castries-cricket-news/"},{"type":"image/jpeg","width":806,"height":605,"size":59098,"url":"https://i.ndtvimg.com/i/2016-09/cricket-generic-806_806x605_61475047367.jpg","thumbnail":{"url":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWG96QogCT5u5cnlKbwNdRARpOGXoK3ufdWR4nzMq4hqzxldtd5ircXCM","width":143,"height":107},"description":"Gates of Holkar Stadium, ...","parentPage":"https://sports.ndtv.com/cricket/news"},{"type":"image/jpeg","width":490,"height":322,"size":41573,"url":"http://www.almanac.com/sites/default/files/d6/images/cricket.JPG","thumbnail":{"url":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ34aq66WsJjCT60VNDYv6hJex1N9OLZxhKYtjBc9LC8dGdaTczTzMv1c8","width":130,"height":85},"description":"To find out this week's ...","parentPage":"http://www.almanac.com/content/cricket-chirps-natures-thermometer"},{"type":"image/jpeg","width":1300,"height":866,"size":372394,"url":"http://blog.bedandchai.com/wp-content/uploads/2015/08/cricket-7.jpg","thumbnail":{"url":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1_aF4cyg94B8qZ7s9O3IccwwBYTWkCOw-JKfx5hYp1HHYac9JlzxX2L2s","width":150,"height":100},"description":"cricket-7","parentPage":"http://blog.bedandchai.com/the-gods-game-cricket-in-india/"},{"type":"image/jpeg","width":620,"height":349,"size":77580,"url":"http://unleashyouralpha.com/wp-content/uploads/2015/03/cricket-2.jpg","thumbnail":{"url":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZnm9bkf7lGujs4LbL6SENKQPSWzM3rnnt39ejVRtht0X1g6Z3Q7CNwP1M","width":136,"height":77},"description":"... doors for Cricket in the ...","parentPage":"http://beingindian.com/sports/cricket-not-part-olympics/"},{"type":"image/jpeg","width":960,"height":625,"size":86146,"url":"http://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2016/12/24/Pictures/india-world-t20-cricket-india-west-indies_1b0651d2-c9a9-11e6-afe5-88e9648d1b9f.jpg","thumbnail":{"url":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhDfi_gTxDj4kWmif8A41BN7XC3XW0siYEGk13PXPh4vQOUaYaTL5_dGxW","width":148,"height":96},"description":"... Twenty20 cricket semifinal ...","parentPage":"http://www.hindustantimes.com/cricket/cricket-in-review-see-windies-master-batsman-carlos-brathwaite-s-6s-in-world-t20-final/story-fUSSl1RmcRQQWpqQ0UMAyI.html"},{"type":"image/","width":1600,"height":900,"size":1941927,"url":"https://lh3.googleusercontent.com/8j0P15eSUoLevePShQVu6Rdfq24GHdeP-gX-RSHp76TdCDfGMucG-zxq47p0uEKEPmY=h900","thumbnail":{"url":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVthzy-MssLSwApzbr1qsnq54JDFE5sZFRIq6gj2BsGk4Aqlr7JlDBYQkH","width":150,"height":84},"description":"World Cricket Championship 2- ...","parentPage":"https://play.google.com/store/apps/details?id=com.nextwave.wcc2"},{"type":"image/jpeg","width":1600,"height":868,"size":359861,"url":"http://blog.bedandchai.com/wp-content/uploads/2015/08/cricket-5.jpg","thumbnail":{"url":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzhNSVg1Iw4tAxqxflFC6toL08An4RglOygif7oW6FgEWrygyRsL2KZlU9","width":150,"height":81},"description":"The Gods' game : Cricket in ...","parentPage":"http://blog.bedandchai.com/the-gods-game-cricket-in-india/"}]</code>
+            <br><b>Recent Search output</b><br>
+            <code>[{"_id":"58dfaa54b30d961792adfc66","term":"cricket","when":"2017-04-01T13:25:39.138Z"}]</code><br><br>
+        </div>
+    </div>
+  </body>
+</html>
